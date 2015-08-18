@@ -312,7 +312,7 @@ var stub = null;
 (function main() {
   var langMgr = new Language({
     success: function() {
-      stub = require('../interface/langStub').getStub(langMgr);
+      stub = require('../interface/stub').getStub(langMgr);
       console.log('language manager start OK');
     },
     fail: function(reason) {
